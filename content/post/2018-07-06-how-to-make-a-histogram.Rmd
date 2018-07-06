@@ -1,0 +1,24 @@
+---
+title: How to make a histogram
+author: Juliana
+date: '2018-07-06'
+slug: how-to-make-a-histogram
+categories: ["tutorial"]
+tags: ["plotting in R"]
+header:
+  caption: 'testing'
+  image: 'static/img/portrait.jpg'
+---
+We are making a histogram in `ggplot`! Yeahhhh!
+
+```{r}
+library(ggplot2)
+```
+
+Use the Iris dataset:
+
+```{r}
+ggplot(iris,aes(x = Sepal.Length)) +
+  geom_histogram()
+```
+
